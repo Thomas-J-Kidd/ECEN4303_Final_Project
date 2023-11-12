@@ -1,0 +1,140 @@
+# SUE version MMI_SUE5.6.41
+
+proc SCHEMATIC_dflipflop {} {
+  make nmos -name nmos -W 0.42 -L 0.15 -origin {640 690}
+  make nmos -name nmos -W 0.42 -L 0.15 -origin {640 820}
+  make nmos -orient RX -name nmos -W 0.42 -L 0.15 -origin {1040 90}
+  make nmos -orient RX -name nmos -W 0.42 -L 0.15 -origin {1040 220}
+  make global -name GND -origin {1040 320}
+  make global -orient RXY -name VDD -origin {1040 -310}
+  make global -orient RXY -name VDD -origin {640 330}
+  make global -name GND -origin {640 920}
+  make pmos -orient RX -name pmos -W 0.42 -L 0.15 -origin {1040 -170}
+  make pmos -orient RX -name pmos -W 0.42 -L 0.15 -origin {1040 -50}
+  make pmos -name pmos -W 0.42 -L 0.15 -origin {640 430}
+  make pmos -name pmos -W 0.42 -L 0.15 -origin {640 550}
+  make nmos -name nmos -W 0.42 -L 0.15 -origin {1600 690}
+  make nmos -name nmos -W 0.42 -L 0.15 -origin {1600 820}
+  make global -orient RXY -name VDD -origin {1600 330}
+  make global -name GND -origin {1600 920}
+  make pmos -name pmos -W 0.42 -L 0.15 -origin {1600 430}
+  make pmos -name pmos -W 0.42 -L 0.15 -origin {1600 550}
+  make nmos -orient RX -name nmos -W 0.42 -L 0.15 -origin {1920 90}
+  make nmos -orient RX -name nmos -W 0.42 -L 0.15 -origin {1920 220}
+  make global -name GND -origin {1920 320}
+  make global -orient RXY -name VDD -origin {1920 -310}
+  make pmos -orient RX -name pmos -W 0.42 -L 0.15 -origin {1920 -170}
+  make pmos -orient RX -name pmos -W 0.42 -L 0.15 -origin {1920 -50}
+  make nmos -name nmos -W 0.42 -L 0.15 -origin {990 700}
+  make pmos -name pmos -W 0.42 -L 0.15 -origin {990 540}
+  make global -orient RXY -name VDD -origin {990 410}
+  make global -name GND -origin {990 810}
+  make nmos -name nmos -W 0.42 -L 0.15 -origin {2010 700}
+  make global -orient RXY -name VDD -origin {2010 410}
+  make global -name GND -origin {2010 810}
+  make pmos -name pmos -W 0.84 -L 0.15 -origin {2010 540}
+  make global -orient RXY -name VDD -origin {320 -290}
+  make global -name GND -origin {320 130}
+  make pmos -name pmos -W 1.68 -L 0.15 -origin {320 -160}
+  make nmos -name nmos -W 0.84 -L 0.15 -origin {320 0}
+  make input -name D -origin {40 640}
+  make output -name Q -origin {2390 620}
+  make input -name clk -origin {100 -80}
+  make output -name clk_b -origin {430 -80}
+  make input -name clk -origin {510 550}
+  make input -name clk_b -origin {510 690}
+  make input -orient RXY -name clk_b -origin {1240 -50}
+  make input -orient RXY -name clk -origin {1240 90}
+  make input -orient RXY -name clk -origin {2120 -50}
+  make input -orient RXY -name clk_b -origin {2120 90}
+  make input -name clk -origin {1470 690}
+  make input -name clk_b -origin {1470 550}
+  make_wire 640 470 640 510
+  make_wire 640 730 640 780
+  make_wire 510 550 580 550
+  make_wire 510 690 580 690
+  make_wire 1040 -130 1040 -90
+  make_wire 1040 130 1040 180
+  make_wire 1100 -50 1240 -50
+  make_wire 1100 90 1240 90
+  make_wire 1040 -310 1040 -210
+  make_wire 1040 320 1040 260
+  make_wire 640 330 640 390
+  make_wire 1600 470 1600 510
+  make_wire 1600 730 1600 780
+  make_wire 1470 550 1540 550
+  make_wire 1470 690 1540 690
+  make_wire 1600 330 1600 390
+  make_wire 1920 -130 1920 -90
+  make_wire 1920 130 1920 180
+  make_wire 1980 -50 2120 -50
+  make_wire 1980 90 2120 90
+  make_wire 1920 -310 1920 -210
+  make_wire 1920 320 1920 260
+  make_wire 640 920 640 860
+  make_wire 990 810 990 740
+  make_wire 1600 920 1600 860
+  make_wire 990 410 990 500
+  make_wire 2010 810 2010 740
+  make_wire 2010 410 2010 500
+  make_wire 320 -290 320 -200
+  make_wire 430 -80 320 -80
+  make_wire 320 -80 320 -120
+  make_wire 320 -80 320 -40
+  make_wire 100 -80 260 -80
+  make_wire 260 -80 260 0
+  make_wire 260 -80 260 -160
+  make_wire 320 40 320 130
+  make_wire 580 430 240 430
+  make_wire 240 820 580 820
+  make_wire 40 640 240 640
+  make_wire 240 640 240 430
+  make_wire 240 640 240 820
+  make_wire 640 620 640 590
+  make_wire 640 620 640 650
+  make_wire 930 620 930 540
+  make_wire 930 620 930 700
+  make_wire 1540 430 1250 430
+  make_wire 1250 820 1540 820
+  make_wire 990 620 990 580
+  make_wire 990 620 990 660
+  make_wire 1250 620 1250 430
+  make_wire 1250 620 1250 820
+  make_wire 1100 -170 1410 -170
+  make_wire 1410 220 1100 220
+  make_wire 1150 620 1150 290
+  make_wire 1150 290 1480 290
+  make_wire 1480 290 1480 10
+  make_wire 1410 10 1410 -170
+  make_wire 1410 10 1480 10
+  make_wire 1410 220 1410 10
+  make_wire 1150 620 990 620
+  make_wire 1150 620 1250 620
+  make_wire 1040 20 830 20
+  make_wire 830 20 830 620
+  make_wire 830 620 640 620
+  make_wire 830 620 930 620
+  make_wire 1040 20 1040 -10
+  make_wire 1040 20 1040 50
+  make_wire 1600 620 1600 590
+  make_wire 1600 620 1600 650
+  make_wire 1950 540 1900 540
+  make_wire 1900 700 1950 700
+  make_wire 1900 620 1900 540
+  make_wire 1900 620 1900 700
+  make_wire 2010 620 2010 580
+  make_wire 2010 620 2010 660
+  make_wire 1980 -170 2310 -170
+  make_wire 2310 220 2310 620
+  make_wire 1980 220 2310 220
+  make_wire 2310 220 2310 -170
+  make_wire 2310 620 2010 620
+  make_wire 1920 30 1760 30
+  make_wire 1760 30 1760 620
+  make_wire 1760 620 1600 620
+  make_wire 1760 620 1900 620
+  make_wire 1920 30 1920 -10
+  make_wire 1920 30 1920 50
+  make_wire 2390 620 2310 620
+}
+

@@ -1,0 +1,22 @@
+stepsize 50.0
+h VDD
+l GND
+clock clk 0 1
+ana D Q clk clk_b
+c
+h D
+c
+l D
+c
+h D
+c
+l D
+c
+h D
+c
+l D
+c
+h D
+c
+l D
+c
