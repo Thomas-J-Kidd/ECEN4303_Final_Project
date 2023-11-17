@@ -29,12 +29,11 @@ Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
 
-Class inv_n84_p168 (1):  Merged 1 parallel devices.
 Subcircuit summary:
 Circuit 1: inv_n84_p168                    |Circuit 2: inv_n84_p168                    
 -------------------------------------------|-------------------------------------------
 sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
-sky130_fd_pr__pfet_01v8 (2)                |sky130_fd_pr__pfet_01v8 (2->1) **Mismatch* 
+sky130_fd_pr__pfet_01v8 (2)                |sky130_fd_pr__pfet_01v8 (1) **Mismatch**   
 Number of devices: 3 **Mismatch**          |Number of devices: 2 **Mismatch**          
 Number of nets: 5 **Mismatch**             |Number of nets: 4 **Mismatch**             
 ---------------------------------------------------------------------------------------

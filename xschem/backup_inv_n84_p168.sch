@@ -49,6 +49,22 @@ N -30 -10 -10 -10 {
 lab=GND}
 N 140 -140 260 -140 {
 lab=CLK_B}
+N 140 -210 260 -210 {
+lab=VDD}
+N 260 -210 260 -200 {
+lab=VDD}
+N 260 -170 290 -170 {
+lab=VDD}
+N 290 -210 290 -170 {
+lab=VDD}
+N 260 -210 290 -210 {
+lab=VDD}
+N 220 -230 220 -170 {
+lab=CLK}
+N 60 -230 220 -230 {
+lab=CLK}
+N 60 -230 60 -170 {
+lab=CLK}
 C {devices/opin.sym} 180 -120 0 0 {name=p1 lab=CLK_B}
 C {devices/ipin.sym} 30 -120 0 0 {name=p2 lab=CLK}
 C {sky130_fd_pr/pfet_01v8.sym} 120 -170 0 0 {name=M1
@@ -64,8 +80,6 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
-
-
 }
 C {sky130_fd_pr/nfet_01v8.sym} 120 -70 0 0 {name=M2
 L=0.15
@@ -87,3 +101,17 @@ C {devices/ipin.sym} -30 -30 0 0 {name=p5 lab=VDD}
 C {devices/lab_pin.sym} -10 -30 0 1 {name=p6 sig_type=std_logic lab=VDD}
 C {devices/ipin.sym} -30 -10 0 0 {name=p7 lab=GND}
 C {devices/lab_pin.sym} -10 -10 0 1 {name=p8 sig_type=std_logic lab=GND}
+C {sky130_fd_pr/pfet_01v8.sym} 240 -170 0 0 {name=M3
+L=0.15
+W=0.84
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
