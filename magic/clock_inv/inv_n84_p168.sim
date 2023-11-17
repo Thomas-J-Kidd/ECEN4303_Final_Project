@@ -1,0 +1,9 @@
+| units: 500000 tech: sky130A format: MIT
+x CLK GND CLK_B GND s=10752,464 d=11088,468 l=30 w=168 x=-117 y=-61 sky130_fd_pr__nfet_01v8
+x CLK a_n182_302# CLK_B VDD s=5376,232 d=15792,524 l=30 w=168 x=-117 y=302 sky130_fd_pr__pfet_01v8
+x CLK VDD a_n182_302# VDD s=10080,456 d=5376,232 l=30 w=168 x=-211 y=302 sky130_fd_pr__pfet_01v8
+R CLK_B 842
+R CLK 1397
+R VDD 2078
+R GND 855
+R a_n182_302# 517

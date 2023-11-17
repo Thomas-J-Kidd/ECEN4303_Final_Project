@@ -1,0 +1,8 @@
+* NGSPICE file created from inv_n84_p168.ext - technology: sky130A
+
+.subckt inv_n84_p168 CLK CLK_B VDD GND
+X0 CLK_B CLK GND GND sky130_fd_pr__nfet_01v8 ad=0.277 pd=2.34 as=0.269 ps=2.32 w=0.84 l=0.15
+X1 CLK_B CLK a_n182_302# VDD sky130_fd_pr__pfet_01v8 ad=0.395 pd=2.62 as=0.134 ps=1.16 w=0.84 l=0.15
+X2 a_n182_302# CLK VDD VDD sky130_fd_pr__pfet_01v8 ad=0.134 pd=1.16 as=0.252 ps=2.28 w=0.84 l=0.15
+.ends
+
